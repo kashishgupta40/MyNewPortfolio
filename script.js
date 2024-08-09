@@ -52,10 +52,11 @@ $(document).ready(function () {
       strings: [
         "FrontEnd Developer",
         "Software Developer",
-        
+        "UI/UX Designer",
+        "Django Developer"
       ],
-      typeSpeed: 100,
-      backSpeed: 60,
+      typeSpeed: 150,
+      backSpeed: 20,
       loop: true
     });
   
