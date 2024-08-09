@@ -505,79 +505,117 @@
     width: 70%;
   }
   
-  /*  Projects  */
-  .projects .title::after {
-    content: "What I did ?";
-  }
-  
-  .projects .carousel .card {
-    background: #222;
-    border-radius: 6px;
-    padding: 25px 35px;
-    text-align: center;
-    overflow: hidden;
-    transition: all 0.3s ease;
-  }
-  
-  .projects .carousel .card:hover {
-    background: #1e3551;
-  }
-  
-  .projects .carousel .card .box {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.3s ease;
-  }
-  
-  .projects .carousel .card:hover .box {
-    transform: scale(1.05);
-  }
-  
-  .projects .carousel .card .text {
-    font-size: 25px;
-    font-weight: 500;
-    margin: 10px 0 7px 0;
-  }
-  
-  .projects .carousel .card img {
-    height: 150px;
-    width: 150px;
-    object-fit: cover;
-    border-radius: 50%;
-    border: 5px solid #888c8d;
-    transition: all 0.3s ease;
-  }
-  
-  .projects .carousel .card:hover img {
-    border-color: #fff;
-  }
-  
-  .owl-dots {
-    text-align: center;
-    margin-top: 20px;
-  }
-  
-  .owl-dot {
-    height: 13px;
-    width: 13px;
-    margin: 0 5px;
-    outline: none !important;
-    border-radius: 50%;
-    border: 2px solid #888c8d !important;
-    transition: all 0.3s ease;
-  }
-  
-  .owl-dot.active {
-    width: 35px;
-    border-radius: 14px;
-  }
-  
-  .owl-dot.active,
-  .owl-dot:hover {
-    background: #18365a !important;
-  }
+  /* Projects */
+.projects .title::after {
+  content: "What I did ?";
+}
+
+.projects .carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.projects .carousel {
+  flex: 1;
+}
+
+.projects .carousel .card {
+  background: #222;
+  border-radius: 6px;
+  padding: 25px 35px;
+  text-align: center;
+  overflow: hidden;
+  transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover {
+  background: #1e3551;
+}
+
+.projects .carousel .card .box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover .box {
+  transform: scale(1.05);
+}
+
+.projects .carousel .card .text {
+  font-size: 25px;
+  font-weight: 500;
+  margin: 10px 0 7px 0;
+}
+
+.projects .carousel .card img {
+  height: 150px;
+  width: 150px;
+  object-fit: cover;
+  border-radius: 50%;
+  border: 5px solid #888c8d;
+  transition: all 0.3s ease;
+}
+
+.projects .carousel .card:hover img {
+  border-color: #fff;
+}
+
+.owl-dots {
+  text-align: center;
+  margin-top: 20px;
+}
+
+.owl-dot {
+  height: 13px;
+  width: 13px;
+  margin: 0 5px;
+  outline: none !important;
+  border-radius: 50%;
+  border: 2px solid #888c8d !important;
+  transition: all 0.3s ease;
+}
+
+.owl-dot.active {
+  width: 35px;
+  border-radius: 14px;
+}
+
+.owl-dot.active,
+.owl-dot:hover {
+  background: #18365a !important;
+}
+
+.carousel-button {
+  background-color: rgba(0, 0, 0, 0.5);
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  cursor: pointer;
+  font-size: 24px;
+  padding: 10px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: background-color 0.3s ease;
+  z-index: 2;
+}
+
+.carousel-button.left {
+  left: -50px;
+}
+
+.carousel-button.right {
+  right: -50px;
+}
+
+.carousel-button:hover {
+  background-color: rgba(0, 0, 0, 0.8);
+}
+
   
   /*  Contact  */
   .contact {

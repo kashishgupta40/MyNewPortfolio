@@ -1,3 +1,8 @@
+const carousel = document.querySelector(".owl-carousel");
+const prevBtn = document.getElementById("prevBtn");
+const nextBtn = document.getElementById("nextBtn");
+let scrollAmount = 0;
+
 $(document).ready(function () {
     $(window).scroll(function () {
       //  sticky navbar on scroll script  //
@@ -15,6 +20,8 @@ $(document).ready(function () {
       }
     });
   
+
+    
     //  slide-up script  //
   
     $(".scroll-up-btn").click(function () {
@@ -61,13 +68,16 @@ $(document).ready(function () {
     });
   
     //  Owl Carousel  //
-  
+     
+   
+
     $(".carousel").owlCarousel({
       margin: 20,
       loop: true,
       autoplay: true,
       autoplayTimeOut: 2000,
       autoplayHoverPause: true,
+      
       responsive: {
         0: {
           items: 1,
