@@ -49,6 +49,8 @@ $(document).ready(function () {
       strings: [
         "FrontEnd Developer",
         "Software Developer",
+        "UI/UX Designer",
+        "Django Developer"
       ],
       typeSpeed: 100,
       backSpeed: 60,
